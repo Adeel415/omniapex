@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block development and utility paths (update as needed)
+Disallow: /netlify/
+Disallow: /.env
+Disallow: /.git/
+
+# Allow all crawlers to access assets needed for rendering
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml

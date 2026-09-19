@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- SEO — set dynamically by seo.js -->
+  <title>OmniApex | Roofing &amp; Technology Services</title>
+  <meta name="description" content="">
+
+  <!-- Manifest / PWA -->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Navigation injected by JS -->
+  <div id="nav-root"></div>
+
+  <main id="main-content">
+
+    <!-- ── Hero + Gateway ──────────────────────────────────────── -->
+    <section class="hero-home" aria-label="OmniApex service selection">
+      <div class="container hero-home__inner">
+
+        <div class="hero-home__eyebrow">
+          Professional Services Across the USA
+        </div>
+
+        <h1 class="hero-home__title">
+          <em>OmniApex</em>
+        </h1>
+
+        <p class="hero-home__sub">
+          Two service categories. One standard of quality. Choose what you need.
+        </p>
+
+        <!-- Service Gateway Cards -->
+        <div class="gateway-grid" role="list" aria-label="Service categories">
+
+          <a href="roofing.html"
+             class="gateway-card"
+             role="listitem"
+             aria-label="Explore Roofing Services">
+
+            <div class="gateway-card__icon" aria-hidden="true">
+              <!-- Roof icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+
+            <div>
+              <h2 class="gateway-card__title">Roofing</h2>
+              <p class="gateway-card__description">
+                Professional roofing solutions for homes and properties across the USA — inspections, repairs, replacements, and storm damage response.
+              </p>
+            </div>
+
+            <div class="gateway-card__cta" aria-hidden="true">
+              Explore Roofing
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </div>
+          </a>
+
+          <a href="tech-services.html"
+             class="gateway-card"
+             role="listitem"
+             aria-label="Explore Technology Services">
+
+            <div class="gateway-card__icon" aria-hidden="true">
+              <!-- Monitor/code icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+
+            <div>
+              <h2 class="gateway-card__title">Tech Services</h2>
+              <p class="gateway-card__description">
+                Affordable websites, mobile applications, automation, and custom digital solutions — built for individuals, startups, and growing businesses.
+              </p>
+            </div>
+
+            <div class="gateway-card__cta" aria-hidden="true">
+              Explore Tech Services
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </div>
+          </a>
+
+        </div>
+        <!-- /Gateway Cards -->
+
+      </div>
+    </section>
+    <!-- /Hero -->
+
+    <!-- ── Trust bar ──────────────────────────────────────────── -->
+    <div class="trust-bar" aria-label="Why choose OmniApex">
+      <div class="container">
+        <div class="trust-bar__grid">
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="trust-bar__label">Quality Guaranteed</span>
+            <span class="trust-bar__sub">Work we stand behind</span>
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <span class="trust-bar__label">Fast Turnaround</span>
+            <span class="trust-bar__sub">Efficient without cutting corners</span>
+          </div>
+          <div class="trust-bar__icon trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <span class="trust-bar__label">Transparent Pricing</span>
+            <span class="trust-bar__sub">No hidden fees or surprises</span>
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span class="trust-bar__label">Nationwide Service</span>
+            <span class="trust-bar__sub">Customers across the USA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── About snippet ──────────────────────────────────────── -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" aria-hidden="true">
+            <!-- Visual placeholder — replace with brand image -->
+            <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:200px; opacity:0.45;">
+              <rect x="20" y="60" width="160" height="80" rx="8" fill="#1B4FD8" opacity="0.2"/>
+              <path d="M20 80 L100 20 L180 80" stroke="#1B4FD8" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <rect x="70" y="100" width="60" height="40" rx="4" fill="#1B4FD8" opacity="0.35"/>
+              <rect x="140" y="100" width="40" height="60" rx="4" fill="#3B7BF7" opacity="0.25"/>
+            </svg>
+          </div>
+
+          <div>
+            <span class="section__label">About OmniApex</span>
+            <h2 id="about-heading" class="section__heading">
+              Two specialties.<br>One reliable team.
+            </h2>
+            <p>
+              OmniApex was built on a simple idea: that quality service and reasonable pricing should not be mutually exclusive. We operate across two service categories — professional roofing solutions and modern technology services — bringing the same level of care and workmanship to both.
+            </p>
+            <p>
+              Whether you need a roof inspected before winter or a website built for your new business, you can expect clear communication, honest pricing, and work delivered on time.
+            </p>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="about.html" class="btn btn--outline">Learn More</a>
+              <a href="contact.html" class="btn btn--primary">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Banner ─────────────────────────────────────────── -->
+    <section class="section" aria-label="Contact CTA">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner__inner">
+            <h2 class="cta-banner__title">Ready to get started?</h2>
+            <p class="cta-banner__lead">
+              Tell us what you need. We'll respond promptly with a clear, straightforward quote — no pressure, no obligations.
+            </p>
+            <div class="cta-banner__actions">
+              <a href="contact.html" class="btn btn--primary btn--lg">Request a Quote</a>
+              <a href="roofing.html" class="btn btn--ghost btn--lg">Explore Roofing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injected by JS -->
+  <div id="footer-root"></div>
+
+  <!-- Scripts — config first, then dependencies, then page init -->
+  <script src="js/config.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/seo.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // SEO
+      const cfg = SITE_CONFIG.pages.home;
+      initSEO({
+        title:       cfg.title,
+        description: cfg.description,
+        url:         cfg.url,
+        isHome:      true,
+      });
+
+      // Render nav + footer + common
+      initPage();
+    });
+  </script>
+</body>
+</html>

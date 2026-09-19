@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <title>Roofing Services | OmniApex</title>
+  <meta name="description" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <div id="nav-root"></div>
+
+  <main id="main-content">
+
+    <!-- ── Hero ──────────────────────────────────────────────────── -->
+    <header class="hero-interior" aria-label="Roofing services overview">
+      <!-- Breadcrumb inside hero for visual context -->
+      <nav class="breadcrumb" aria-label="Page location">
+        <ol class="breadcrumb__list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true"><span class="breadcrumb__sep">/</span></li>
+          <li><span aria-current="page">Roofing</span></li>
+        </ol>
+      </nav>
+
+      <div class="hero-interior__inner" style="padding-top: 2.5rem;">
+        <div class="hero-interior__label" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Professional Roofing
+        </div>
+        <h1 class="hero-interior__title">Professional Roofing Services Across the USA</h1>
+        <p class="hero-interior__lead">
+          From routine inspections to emergency storm response — OmniApex provides reliable roofing solutions for residential and commercial properties. We're straightforward about what your roof needs and what it will cost.
+        </p>
+        <div class="hero-interior__actions">
+          <a href="contact.html?service=roofing" class="btn btn--primary btn--lg">Get a Roofing Quote</a>
+          <a href="#services" class="btn btn--ghost btn--lg">View Services</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Why your roof matters ─────────────────────────────────── -->
+    <section class="section section--tinted" aria-labelledby="roof-importance-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="section__label">Protecting Your Property</span>
+            <h2 id="roof-importance-heading" class="section__heading">Your roof works hard — until it doesn't</h2>
+            <p>
+              A well-maintained roof is your property's first line of defense against rain, wind, ice, and heat. Most roof problems start small — a loose shingle, a cracked seal, a clogged gutter — and become expensive when they're ignored.
+            </p>
+            <p>
+              OmniApex approaches roofing with the same principle we apply to every service: identify the actual problem, explain it clearly, and fix it correctly. We don't upsell unnecessary work, and we don't cut corners on the work you do need.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="contact.html?service=roof-inspection" class="btn btn--primary">Schedule an Inspection</a>
+            </div>
+          </div>
+          <div class="about-visual" aria-hidden="true">
+            <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:220px; opacity:0.5;">
+              <path d="M20 100 L100 30 L180 100" stroke="#1B4FD8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="40" y="100" width="120" height="50" rx="4" fill="#1B4FD8" opacity="0.15"/>
+              <rect x="80" y="115" width="40" height="35" rx="3" fill="#3B7BF7" opacity="0.30"/>
+              <line x1="40" y1="100" x2="40" y2="150" stroke="#1B4FD8" stroke-width="2" opacity="0.3"/>
+              <line x1="160" y1="100" x2="160" y2="150" stroke="#1B4FD8" stroke-width="2" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Services ───────────────────────────────────────────────── -->
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <span class="section__label">What We Offer</span>
+        <h2 id="services-heading" class="section__heading">Roofing services for every situation</h2>
+        <p class="section__lead">
+          Whether you're dealing with a new leak, planning a replacement, or recovering from storm damage — we have the service you need.
+        </p>
+
+        <div class="services-grid reveal" id="roofing-services-grid" aria-live="polite">
+          <!-- Injected by app.js / renderRoofingServices() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── When to repair vs replace ───────────────────────────── -->
+    <section class="section section--tinted" aria-labelledby="repair-replace-heading">
+      <div class="container container--narrow">
+        <span class="section__label">Quick Guide</span>
+        <h2 id="repair-replace-heading" class="section__heading">Repair or replace — how do you know?</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;" class="repair-replace-grid">
+
+          <div style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.75rem;">
+            <h3 style="color: var(--color-success); margin-bottom: 1rem; font-size: 1rem;">
+              ✓ Consider Repair When
+            </h3>
+            <ul style="display: flex; flex-direction: column; gap: 0.625rem;">
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Roof is under 15 years old
+              </li>
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Damage is limited to one area
+              </li>
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Structure is sound overall
+              </li>
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Repair cost is under 30% of replacement
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.75rem;">
+            <h3 style="color: var(--color-blue); margin-bottom: 1rem; font-size: 1rem;">
+              → Consider Replacement When
+            </h3>
+            <ul style="display: flex; flex-direction: column; gap: 0.625rem;">
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Roof is over 20 years old
+              </li>
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Damage covers more than 30% of surface
+              </li>
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Multiple leaks in different areas
+              </li>
+              <li style="font-size: 0.9375rem; color: var(--color-text-muted); padding-left: 1.25rem; position: relative;">
+                <span style="position:absolute;left:0;">•</span>Repairs are becoming more frequent
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p style="margin-top: 1.5rem; color: var(--color-text-muted); font-size: 0.9375rem;">
+          Not sure which applies? A professional inspection is the clearest way to find out. We'll give you an honest assessment — no pressure, no obligation.
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="contact.html?service=roof-inspection" class="btn btn--primary">Schedule a Free Assessment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────────────────────────── -->
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <span class="section__label">Common Questions</span>
+        <h2 id="faq-heading" class="section__heading">Answers to what customers ask most</h2>
+        <div class="faq-list reveal" id="roofing-faq" aria-live="polite">
+          <!-- Injected by app.js / renderFAQ() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ────────────────────────────────────────────────────── -->
+    <section class="section" aria-label="Get a roofing quote">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner__inner">
+            <h2 class="cta-banner__title">Let's look at your roof.</h2>
+            <p class="cta-banner__lead">
+              Contact OmniApex for a straightforward roofing assessment. We'll tell you exactly what's needed — and what isn't.
+            </p>
+            <div class="cta-banner__actions">
+              <a href="contact.html?service=roofing" class="btn btn--primary btn--lg">Get a Roofing Quote</a>
+              <a href="tel:" class="btn btn--ghost btn--lg" id="cta-phone">Call Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/seo.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cfg = SITE_CONFIG.pages.roofing;
+
+      initSEO({
+        title:       cfg.title,
+        description: cfg.description,
+        url:         cfg.url,
+        service:     { name: "Professional Roofing Services", description: cfg.description },
+        breadcrumbs: [
+          { name: "Home",    url: "/" },
+          { name: "Roofing", url: "/roofing.html" },
+        ],
+        faqs: SERVICES.roofingFAQ,
+      });
+
+      initPage();
+      renderRoofingServices("roofing-services-grid");
+      renderFAQ("roofing-faq", SERVICES.roofingFAQ);
+
+      // Phone CTA
+      const ph = SITE_CONFIG.company.phone;
+      const phoneCta = document.getElementById("cta-phone");
+      if (ph && phoneCta) {
+        phoneCta.href        = "tel:" + ph.replace(/\s/g,"");
+        phoneCta.textContent = ph;
+      } else if (phoneCta) {
+        phoneCta.style.display = "none";
+      }
+
+      // Fix repair/replace grid on mobile
+      if (window.innerWidth < 600) {
+        document.querySelector(".repair-replace-grid").style.gridTemplateColumns = "1fr";
+      }
+    });
+  </script>
+</body>
+</html>

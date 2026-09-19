@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <title>Contact OmniApex | Request a Quote</title>
+  <meta name="description" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <style>
+    .contact-page-header {
+      padding-block: calc(68px + 3rem) 3rem;
+      background: linear-gradient(155deg, var(--color-navy) 0%, #0D2348 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-page-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 80% 50%, rgba(59,123,247,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .contact-page-header__inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      margin-inline: auto;
+      padding-inline: var(--container-px);
+    }
+    .contact-page-header h1 { color: white; }
+    .contact-page-header p { color: rgba(255,255,255,0.72); }
+
+    .form-section-title {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+      margin-top: 1.75rem;
+      padding-bottom: 0.625rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .form-section-title:first-child { margin-top: 0; }
+  </style>
+</head>
+<body>
+
+  <div id="nav-root"></div>
+
+  <main id="main-content">
+
+    <!-- ── Header ────────────────────────────────────────────────── -->
+    <header class="contact-page-header">
+      <nav style="max-width:var(--max-width);margin-inline:auto;padding-inline:var(--container-px);padding-block:0.75rem;background:rgba(0,0,0,0.15);border-radius:0;margin-bottom:0;" aria-label="Page location">
+        <ol style="display:flex;gap:0.5rem;align-items:center;font-size:0.875rem;list-style:none;">
+          <li><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a></li>
+          <li style="color:rgba(255,255,255,0.3);">/</li>
+          <li style="color:rgba(255,255,255,0.9);font-weight:500;" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+      <div class="contact-page-header__inner" style="padding-top:2.5rem;">
+        <div style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.8125rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-blue-bright);margin-bottom:1.25rem;" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Contact &amp; Quotes
+        </div>
+        <h1 style="max-width:14ch;margin-bottom:1rem;">Let's talk about your project.</h1>
+        <p style="max-width:52ch;font-size:1.0625rem;">
+          Fill out the form below with as much or as little detail as you have. We'll respond promptly with a clear quote or a few clarifying questions.
+        </p>
+      </div>
+    </header>
+
+    <!-- ── Contact layout ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="sr-only">Contact form and information</h2>
+        <div class="contact-layout">
+
+          <!-- Left: info -->
+          <aside aria-label="Contact information">
+            <h2 class="contact-info__heading">How to reach us</h2>
+            <p class="contact-info__lead">
+              We're responsive and straightforward. Expect to hear back within one business day.
+            </p>
+
+            <div class="contact-detail">
+              <div class="contact-detail__item" id="phone-detail" style="display:none;">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.1 6.1l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-detail__label">Phone</span>
+                  <span class="contact-detail__value"><a href="#" id="contact-phone-link" data-phone></a></span>
+                </div>
+              </div>
+
+              <div class="contact-detail__item" id="email-detail" style="display:none;">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-detail__label">Email</span>
+                  <span class="contact-detail__value"><a href="#" id="contact-email-link"></a></span>
+                </div>
+              </div>
+
+              <div class="contact-detail__item">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-detail__label">Service Area</span>
+                  <span class="contact-detail__value" id="contact-service-area"></span>
+                </div>
+              </div>
+
+              <div class="contact-detail__item">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <span class="contact-detail__label">Response Time</span>
+                  <span class="contact-detail__value">Within 1 business day</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social links in contact sidebar -->
+            <div id="contact-social-wrapper" style="display:none;">
+              <p style="font-size:0.875rem;font-weight:600;color:var(--color-text-muted);margin-bottom:0.75rem;">Connect with us</p>
+              <div id="contact-social" style="display:flex;gap:0.5rem;flex-wrap:wrap;"></div>
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-blue-light); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+              <p style="font-size:0.875rem;color:var(--color-navy);font-weight:600;margin-bottom:0.5rem;">Not sure which service you need?</p>
+              <p style="font-size:0.875rem;color:var(--color-text-muted);max-width:none;">Select "Other / Not sure" in the form and describe what you're trying to accomplish. We'll figure out the right approach together.</p>
+            </div>
+          </aside>
+
+          <!-- Right: form -->
+          <div>
+            <div class="form-card">
+              <div id="form-feedback" tabindex="-1" aria-live="assertive"></div>
+
+              <form id="contact-form" novalidate aria-label="Contact and quote request form">
+
+                <div class="form-section-title">Your Information</div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="name">Full Name <span class="required" aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" class="form-input"
+                           autocomplete="name" placeholder="John Smith"
+                           required aria-required="true" data-validate>
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" class="form-input"
+                           autocomplete="email" placeholder="john@example.com"
+                           required aria-required="true" data-validate>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-input"
+                         autocomplete="tel" placeholder="(555) 000-0000"
+                         data-validate>
+                </div>
+
+                <div class="form-section-title">Service &amp; Location</div>
+
+                <div class="form-field">
+                  <label for="service">Service Needed <span class="required" aria-label="required">*</span></label>
+                  <select id="service" name="service" class="form-select"
+                          required aria-required="true" data-validate>
+                    <option value="">— Select a service —</option>
+                    <optgroup label="Roofing">
+                      <option value="roof-inspection">Roof Inspection</option>
+                      <option value="roof-repair">Roof Repair</option>
+                      <option value="roof-replacement">Roof Replacement</option>
+                      <option value="roof-leak">Roof Leak Repair</option>
+                      <option value="shingle-roofing">Shingle Roofing</option>
+                      <option value="metal-roofing">Metal Roofing</option>
+                      <option value="storm-damage">Storm Damage Repair</option>
+                      <option value="maintenance">Roof Maintenance</option>
+                      <option value="emergency">Emergency Roofing</option>
+                      <option value="roofing">Roofing — Not Sure Yet</option>
+                    </optgroup>
+                    <optgroup label="Technology Services">
+                      <option value="portfolio-website">Portfolio Website</option>
+                      <option value="business-website">Business Website</option>
+                      <option value="landing-page">Landing Page</option>
+                      <option value="mobile-app">Mobile App Development</option>
+                      <option value="automation">Automation</option>
+                      <option value="custom-software">Custom Software</option>
+                      <option value="tech">Tech Services — Not Sure Yet</option>
+                    </optgroup>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                </div>
+
+                <!-- Address fields (important for roofing) -->
+                <div class="form-field">
+                  <label for="address">Property Address <span style="font-weight:400;color:var(--color-text-muted);">(for roofing)</span></label>
+                  <input type="text" id="address" name="address" class="form-input"
+                         autocomplete="street-address" placeholder="123 Main Street">
+                </div>
+
+                <div class="form-row form-row--three">
+                  <div class="form-field">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" class="form-input"
+                           autocomplete="address-level2" placeholder="Los Angeles">
+                  </div>
+                  <div class="form-field">
+                    <label for="state">State</label>
+                    <select id="state" name="state" class="form-select" autocomplete="address-level1">
+                      <option value="">State</option>
+                      <option>AL</option><option>AK</option><option>AZ</option><option>AR</option>
+                      <option>CA</option><option>CO</option><option>CT</option><option>DE</option>
+                      <option>FL</option><option>GA</option><option>HI</option><option>ID</option>
+                      <option>IL</option><option>IN</option><option>IA</option><option>KS</option>
+                      <option>KY</option><option>LA</option><option>ME</option><option>MD</option>
+                      <option>MA</option><option>MI</option><option>MN</option><option>MS</option>
+                      <option>MO</option><option>MT</option><option>NE</option><option>NV</option>
+                      <option>NH</option><option>NJ</option><option>NM</option><option>NY</option>
+                      <option>NC</option><option>ND</option><option>OH</option><option>OK</option>
+                      <option>OR</option><option>PA</option><option>RI</option><option>SC</option>
+                      <option>SD</option><option>TN</option><option>TX</option><option>UT</option>
+                      <option>VT</option><option>VA</option><option>WA</option><option>WV</option>
+                      <option>WI</option><option>WY</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" name="zip" class="form-input"
+                           autocomplete="postal-code" placeholder="90210"
+                           maxlength="10" data-validate>
+                  </div>
+                </div>
+
+                <div class="form-section-title">Your Message</div>
+
+                <div class="form-field">
+                  <label for="message">Tell us what you need <span class="required" aria-label="required">*</span></label>
+                  <textarea id="message" name="message" class="form-textarea"
+                            placeholder="Describe your project or issue. For roofing, include the type of problem and how long it's been ongoing. For tech, share a brief description of what you want to build."
+                            rows="5" required aria-required="true" data-validate></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full" data-submit
+                        style="margin-top: 0.5rem;">
+                  Send Message
+                </button>
+
+                <p style="font-size:0.8125rem;color:var(--color-text-muted);text-align:center;margin-top:1rem;">
+                  By submitting this form, you agree to be contacted by OmniApex regarding your inquiry. We do not share your information with third parties.
+                </p>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/seo.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cfg = SITE_CONFIG.pages.contact;
+      const c   = SITE_CONFIG.company;
+
+      initSEO({
+        title:       cfg.title,
+        description: cfg.description,
+        url:         cfg.url,
+        breadcrumbs: [
+          { name: "Home",    url: "/" },
+          { name: "Contact", url: "/contact.html" },
+        ],
+      });
+
+      initPage();
+      initContactForm("contact-form");
+
+      // Inject contact details from config
+      const phoneEl   = document.getElementById("phone-detail");
+      const phoneLink = document.getElementById("contact-phone-link");
+      if (c.phone && phoneEl && phoneLink) {
+        phoneEl.style.display   = "flex";
+        phoneLink.href           = "tel:" + c.phone.replace(/\s/g, "");
+        phoneLink.textContent    = c.phone;
+      }
+
+      const emailEl   = document.getElementById("email-detail");
+      const emailLink = document.getElementById("contact-email-link");
+      if (c.email && emailEl && emailLink) {
+        emailEl.style.display   = "flex";
+        emailLink.href          = "mailto:" + c.email;
+        emailLink.textContent   = c.email;
+      }
+
+      const areaEl = document.getElementById("contact-service-area");
+      if (areaEl) areaEl.textContent = c.serviceArea;
+
+      // Social links in sidebar
+      const socialContainer = document.getElementById("contact-social");
+      const socialWrapper   = document.getElementById("contact-social-wrapper");
+      if (socialContainer && socialWrapper) {
+        renderSocialLinks(socialContainer, "md");
+        if (socialContainer.children.length > 0) {
+          socialWrapper.style.display = "block";
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* ─────────────────────────────────────────────────────────────────
+   OmniApex — Responsive Stylesheet
+   Breakpoints: 480 / 768 / 1024 / 1280
+   ───────────────────────────────────────────────────────────────── */
+
+/* ── Tablet (768px and below) ────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .mobile-menu { display: block; }
+
+  /* Hero */
+  .hero-home {
+    min-height: auto;
+    padding-block: calc(68px + 3rem) 3rem;
+  }
+  .hero-home__title { font-size: clamp(2rem, 9vw, 2.75rem); }
+  .hero-home__sub    { font-size: 1rem; }
+
+  /* Gateway cards — stack */
+  .gateway-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .gateway-card { padding: 1.75rem 1.5rem; }
+
+  /* Interior hero */
+  .hero-interior__actions { flex-direction: column; align-items: flex-start; }
+  .hero-interior__actions .btn { width: 100%; justify-content: center; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; }
+  .pricing-grid  { grid-template-columns: 1fr; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; }
+  .about-visual { aspect-ratio: 16 / 9; }
+
+  /* Trust bar */
+  .trust-bar__grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+  /* Contact */
+  .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .form-card { padding: 1.75rem 1.25rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-row--three { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .footer-nav { grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+  /* CTA banner */
+  .cta-banner { padding: 2.5rem 1.5rem; }
+
+  /* Breadcrumb */
+  .breadcrumb { margin-top: 68px; }
+}
+
+/* ── Mobile (480px and below) ────────────────────────────────────── */
+@media (max-width: 480px) {
+
+  :root { --container-px: 1rem; }
+
+  /* Footer */
+  .footer-nav { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Trust bar */
+  .trust-bar__grid { grid-template-columns: 1fr 1fr; }
+
+  /* Gateway cards */
+  .gateway-card { padding: 1.5rem 1.25rem; }
+  .gateway-card__icon { width: 48px; height: 48px; }
+  .gateway-card__icon svg { width: 24px; height: 24px; }
+  .gateway-card__title { font-size: 1.25rem; }
+
+  /* Hero buttons */
+  .hero-home .btn { width: 100%; justify-content: center; }
+
+  /* CTA banner */
+  .cta-banner__actions { flex-direction: column; }
+  .cta-banner__actions .btn { width: 100%; }
+}
+
+/* ── Large desktop (1280px and above) ───────────────────────────── */
+@media (min-width: 1280px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Print ───────────────────────────────────────────────────────── */
+@media print {
+  .site-header,
+  .site-footer,
+  .nav-toggle,
+  .mobile-menu,
+  .btn,
+  .hero-home::before,
+  .hero-home::after { display: none !important; }
+
+  body { background: white; color: black; font-size: 12pt; }
+  h1, h2, h3 { color: black; }
+  a { color: black; text-decoration: underline; }
+
+  .section { padding-block: 1rem; }
+  .container { max-width: 100%; }
+  .services-grid, .pricing-grid { grid-template-columns: 1fr 1fr; }
+}
